@@ -61,7 +61,7 @@ This repository contains a Python application that utilizes the Mediapipe librar
 ### `main.py`
 The entry point of the application. Captures the webcam feed, processes each frame using the `MediapipeProcessor` class, and displays the annotated video feed.
 
-### `MediapipeProcessor` Class
+### `MediapipeProcessor` Class (in mediapipe_processor.py)
 Encapsulates all Mediapipe functionalities, including:
 - **Gesture Recognition**: Implements logic to identify specific hand gestures.
 - **Posture Detection**: Analyzes pose landmarks to determine the user's posture.
@@ -91,6 +91,19 @@ if all(hip.y < 0.5 for hip in hips):
     return "Squatting"
 ```
 
+## Images
+
+Below are example screenshots of the application in action:
+
+1. **Posture Detection**:
+   ![Posture Detection Example](docs/img/img-1.png)
+
+2. **Gesture Recognition**:
+   ![Gesture Recognition Example](docs/img/img-2.png)
+
+3. **Face Detection**:
+   ![Face Detection Example](docs/img/img-3.png)
+
 ## Troubleshooting
 
 - **Webcam Not Detected**: Ensure your webcam is connected and not being used by another application.
@@ -116,4 +129,3 @@ This project is licensed under the MIT License. See the `LICENSE` file for detai
 
 - [Mediapipe](https://google.github.io/mediapipe/) for providing an excellent framework for real-time ML solutions.
 - [OpenCV](https://opencv.org/) for robust computer vision functionalities.
-
